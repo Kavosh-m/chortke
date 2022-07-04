@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import AccountCard from "./components/AccountCard";
+import Info from "./components/Info";
+import User from "./components/User";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mx-auto min-h-screen bg-[#d3d9e1] pt-[121px] pr-[168px] pl-20">
+      <main className="grid grid-cols-3 gap-8 font-iransansweb">
+        {/* Private account card */}
+        <AccountCard />
+
+        {/* User section */}
+        <User />
+
+        {/* Info table section */}
+        <Info />
+      </main>
     </div>
   );
 }
