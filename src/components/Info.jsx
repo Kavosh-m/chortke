@@ -36,7 +36,7 @@ const Info = ({ customer }) => {
               className={({ selected }) =>
                 selected
                   ? "rounded-[1px] border-b-[3px] border-blue-500 pb-3 font-bold outline-none"
-                  : "pb-[14px] text-slate-500"
+                  : "pb-[14px] text-[#aeaeae]"
               }
               key={item.id}
             >

@@ -31,7 +31,7 @@ const User = ({ data, customers }) => {
       </div>
 
       {/* Info */}
-      <div className="mt-[40px] w-full rounded-xl bg-white">
+      <div className="mt-[36px] w-full rounded-xl bg-white">
         <div className="flex w-full flex-col gap-y-4 px-6 pt-5 pb-4 text-sm">
           <section className="flex flex-col gap-y-2">
             <p>بازه زمانی</p>
