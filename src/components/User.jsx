@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux/es/exports";
 import { setCurrentCustomer } from "../redux/app/slices/customerSlice";
 import Factor from "./Factor";
+import DateRangePicker from "./DateRangePicker";
 
 const User = ({ data, customers }) => {
   const dispatch = useDispatch();
@@ -34,7 +35,7 @@ const User = ({ data, customers }) => {
         <div className="flex w-full flex-col gap-y-4 px-6 pt-5 pb-4 text-sm">
           <section className="flex flex-col gap-y-2">
             <p>بازه زمانی</p>
-            <div>calendar</div>
+            <DateRangePicker />
           </section>
           <section className="flex flex-col gap-y-2">
             <p>پروژه</p>

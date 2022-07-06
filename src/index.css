@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    @font-face {
-        font-family: "IRANSansWeb";
-        font-weight: 400;
-        src: url("./assets/fonts/irsans.ttf");
-    }
+  @font-face {
+    font-family: "IRANSansWeb";
+    font-weight: 400;
+    src: url("./assets/fonts/irsans.ttf");
+  }
 }

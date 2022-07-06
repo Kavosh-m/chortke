@@ -30,7 +30,11 @@ const AccountCard = ({ data }) => {
               {data.customerID}
             </p>
             <div className="grid aspect-square w-24 place-items-center rounded-full border-4 border-blue-500">
-              <img src={avatar} className="aspect-square w-20 object-cover" />
+              <img
+                src={avatar}
+                alt="a small avatar for user"
+                className="aspect-square w-20 object-cover"
+              />
             </div>
             <p className="[background:_linear-gradient(251.46deg,_#568AFF_3.43%,_#3370F9_48.19%,_#578BFF_100%)] [-webkit-background-clip:_text] [-webkit-text-fill-color:_transparent] [background-clip:_text] [text-fill-color:_transparent]">
               {data.type}

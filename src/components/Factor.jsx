@@ -1,5 +1,3 @@
-import React from "react";
-
 const Factor = ({ factorType, data }) => {
   return (
     <div className="flex flex-col divide-y-2">

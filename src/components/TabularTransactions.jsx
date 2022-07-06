@@ -53,7 +53,7 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
   useEffect(() => {
     //when user changed then page will get back to page #1
     setPageNumber(0);
-  }, [data]);
+  }, [data, numOfRowsPerPage]);
 
   return (
     <div>
@@ -147,7 +147,7 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
           disabledClassName="text-[#82828240]"
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
-          pageCount={Math.ceil(data?.length / numOfRowsPerPage)}
+          pageCount={Math.ceil(sorted?.length / numOfRowsPerPage)}
           onPageChange={onPageChange}
           containerClassName="bg-[#FBFBFB] flex items-center"
           pageClassName="mx-1 text-[#828282]"
@@ -161,11 +161,8 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
         <section className="flex items-center gap-x-2 text-sm text-[#4F4F4F]">
           <p>نشان دادن</p>
           <select
-            value={numOfRowsPerPage}
             onChange={(e) => setNumOfRowsPerPage(e.target.value)}
             className="h-8 rounded-lg border border-[#AEAEAE] text-xs font-semibold text-[#1062D0] outline-none"
-            id="cars"
-            name="cars"
           >
             <option value={10}>10</option>
             <option value={15}>15</option>
