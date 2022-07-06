@@ -1,0 +1,293 @@
+[
+  {
+    "customerID": "2334",
+    "type": "مشتری",
+    "customerPersonalInfo": {
+      "financial": {
+        "status": "بستانکار",
+        "amount": 4168500,
+        "totalCredit": 100000000,
+        "factors": {
+          "buy": {
+            "notPaied": {
+              "count": 5,
+              "fee": 965841
+            },
+            "outOfDate": {
+              "count": 2,
+              "fee": 85582
+            }
+          },
+          "sell": {
+            "notPaied": {
+              "count": 3,
+              "fee": 5625841
+            },
+            "outOfDate": {
+              "count": 7,
+              "fee": 2532514
+            }
+          }
+        }
+      },
+      "personal": {
+        "name": "علی راهداری",
+        "major": "مهندس",
+        "companyName": "شرکت راه سازان",
+        "profilePic": null,
+        "address": "خیابان ولیعصر(عج)، کوچه رهبان(شهید عتیقی نژاد) –  پلاک ۹۹۹۹ شیراز – فارس – ایران",
+        "zip": "1234567890",
+        "tel": "34053984",
+        "cellphone": "09128221134",
+        "email": "something@yahoo.com",
+        "website": "www.eng.com",
+        "bankaccountnumber": "5625842019"
+      }
+    },
+    "transactions": [
+      {
+        "date": "2022-10-01",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-02",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-03",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-04",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-05",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-06",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-07",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-08",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-09",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-10",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-11",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-12",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-13",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-14",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-15",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-16",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-17",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-18",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-19",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-20",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-21",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-22",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-23",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-24",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-25",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-26",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 1000,
+        "tashkhis": "بس"
+      },
+      {
+        "date": "2022-10-27",
+        "num": "0004",
+        "desc": "فاکتور فروش # ۱۰۰۵ - شرکت راه سازان - مهندس علی راهداری",
+        "bedehkarAmount": 49168500,
+        "bestankarAmount": 49169500,
+        "taraz": 5000,
+        "tashkhis": "بس"
+      }
+    ]
+  }
+]

@@ -10,31 +10,26 @@ const people = [
   { id: 5, name: "Katelyn Rohan" },
 ];
 
-const User = () => {
+const User = ({ data }) => {
   const [selectedPerson, setSelectedPerson] = useState(people[0]);
 
   return (
     <section className="col-span-1 flex flex-col items-center">
-      <div className="w-full">
-        <p>شخص</p>
-        <Listbox value={selectedPerson} onChange={setSelectedPerson}>
-          <Listbox.Button>{selectedPerson.name}</Listbox.Button>
-          <Listbox.Options>
-            {people.map((person) => (
-              <Listbox.Option
-                key={person.id}
-                value={person}
-                disabled={person.unavailable}
-              >
-                {person.name}
-              </Listbox.Option>
-            ))}
-          </Listbox.Options>
-        </Listbox>
+      <div className="w-full px-6">
+        <p className="mb-[13px]">شخص</p>
+        <select
+          className="h-10 w-full rounded-lg border border-[#AEAEAE] bg-[#F1F1F1] text-[#333333] outline-none"
+          id="cars"
+          name="cars"
+        >
+          <option className="text-sm text-[#333333]">
+            0002 - شرکت راه سازان - مهندس علی راهداری
+          </option>
+        </select>
       </div>
 
       {/* Info */}
-      <div className="mt-12 w-full rounded-xl bg-white">
+      <div className="mt-[40px] w-full rounded-xl bg-white">
         <div className="flex w-full flex-col gap-y-4 px-6 pt-5 pb-4 text-sm">
           <section className="flex flex-col gap-y-2">
             <p>بازه زمانی</p>
@@ -42,14 +37,26 @@ const User = () => {
           </section>
           <section className="flex flex-col gap-y-2">
             <p>پروژه</p>
-            <div>combo</div>
+            <div>
+              <select
+                className="h-10 w-full rounded-lg border border-[#AEAEAE] text-[#AEAEAE] outline-none"
+                id="cars"
+                name="cars"
+              ></select>
+            </div>
           </section>
         </div>
 
         {/*Factors section - sell and buy */}
         <div className="mx-4 flex flex-col gap-y-12 rounded-xl bg-[#f9fafe] p-6">
-          <Factor factorType="sell" />
-          <Factor factorType="buy" />
+          <Factor
+            factorType="sell"
+            data={data.customerPersonalInfo.financial.factors}
+          />
+          <Factor
+            factorType="buy"
+            data={data.customerPersonalInfo.financial.factors}
+          />
         </div>
       </div>
     </section>

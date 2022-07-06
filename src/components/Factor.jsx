@@ -1,9 +1,9 @@
 import React from "react";
 
-const Factor = ({ factorType }) => {
+const Factor = ({ factorType, data }) => {
   return (
     <div className="flex flex-col divide-y-2">
-      <h2 className="pb-4 text-lg">
+      <h2 className="pb-4 text-lg font-semibold">
         فاکتور{" "}
         <span
           className={`${
@@ -17,20 +17,38 @@ const Factor = ({ factorType }) => {
       <div className="flex items-center justify-between pt-4 text-sm">
         <section>
           <div className="flex items-center gap-x-3">
-            <p>پرداخت نشده</p>
-            <p className="rounded-lg bg-blue-300 p-2 py-1">1</p>
+            <p className="font-semibold">پرداخت نشده</p>
+            <p className="rounded-lg bg-blue-300 p-2 py-1">
+              {factorType === "sell"
+                ? data.sell.notPaied.count
+                : data.buy.notPaied.count}
+            </p>
           </div>
           <p>
-            <span className="text-base">4168500</span> ریال
+            <span className="text-base font-semibold">
+              {factorType === "sell"
+                ? data.sell.notPaied.fee.toLocaleString("fa-IR")
+                : data.buy.notPaied.fee.toLocaleString("fa-IR")}
+            </span>{" "}
+            ریال
           </p>
         </section>
         <section>
           <div className="flex items-center gap-x-3">
-            <p>سررسید گذشته</p>
-            <p className="rounded-lg bg-blue-300 p-2 py-1">2</p>
+            <p className="font-semibold">سررسید گذشته</p>
+            <p className="rounded-lg bg-blue-300 p-2 py-1">
+              {factorType === "sell"
+                ? data.sell.outOfDate.count
+                : data.buy.outOfDate.count}
+            </p>
           </div>
           <p>
-            <span className="text-base">4168500</span> ریال
+            <span className="text-base font-semibold">
+              {factorType === "sell"
+                ? data.sell.outOfDate.fee.toLocaleString("fa-IR")
+                : data.buy.outOfDate.fee.toLocaleString("fa-IR")}
+            </span>{" "}
+            ریال
           </p>
         </section>
       </div>
