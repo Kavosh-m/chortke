@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import TabularTransactions from "./TabularTransactions";
-import customers from "../fakeData/customers.json";
 
-const Info = () => {
+const Info = ({ customer }) => {
   const [isAscending, setIsAscending] = useState(true);
 
   const data = [
@@ -12,7 +11,7 @@ const Info = () => {
       title: "تراکنش ها",
       content: (
         <TabularTransactions
-          data={customers[0].transactions}
+          data={customer.transactions}
           isAscending={isAscending}
           setIsAscending={setIsAscending}
         />

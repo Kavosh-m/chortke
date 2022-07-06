@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { sortAsc, sortDesc } from "../utils/sorting";
 import { VscTriangleDown, VscTriangleUp } from "react-icons/vsc";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
@@ -24,16 +24,22 @@ const toPersianDate = (d) => {
   });
 };
 
+// sort data before mapping on UI
+const sortedData = (d, c) => {
+  if (d) {
+    let copyD = [...d];
+    return c ? copyD.sort(sortAsc) : copyD.sort(sortDesc);
+  }
+};
+
 const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
   const [pageNumber, setPageNumber] = useState(0);
   const [numOfRowsPerPage, setNumOfRowsPerPage] = useState(10);
 
-  //   const [selectedValue, setSelectedValue] = useState(10);
-
-  // sort data before mapping on UI
-  let sortedData = () => {
-    return isAscending ? data.sort(sortAsc) : data.sort(sortDesc);
-  };
+  const sorted = useMemo(
+    () => sortedData(data, isAscending),
+    [data, isAscending]
+  );
 
   const changeSortingType = () => {
     setIsAscending(!isAscending);
@@ -43,6 +49,11 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
   const onPageChange = ({ selected }) => {
     setPageNumber(selected);
   };
+
+  useEffect(() => {
+    //when user changed then page will get back to page #1
+    setPageNumber(0);
+  }, [data]);
 
   return (
     <div>
@@ -88,8 +99,8 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
               </td>
             ))}
           </tr>
-          {sortedData()
-            .slice(
+          {sorted
+            ?.slice(
               pageNumber * numOfRowsPerPage,
               pageNumber * numOfRowsPerPage + numOfRowsPerPage
             )
@@ -136,7 +147,7 @@ const TabularTransactions = ({ data, isAscending, setIsAscending }) => {
           disabledClassName="text-[#82828240]"
           pageRangeDisplayed={2}
           marginPagesDisplayed={1}
-          pageCount={Math.ceil(sortedData().length / numOfRowsPerPage)}
+          pageCount={Math.ceil(data?.length / numOfRowsPerPage)}
           onPageChange={onPageChange}
           containerClassName="bg-[#FBFBFB] flex items-center"
           pageClassName="mx-1 text-[#828282]"

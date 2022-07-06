@@ -1,17 +1,13 @@
-import { useState } from "react";
+import { useDispatch } from "react-redux/es/exports";
+import { setCurrentCustomer } from "../redux/app/slices/customerSlice";
 import Factor from "./Factor";
-import { Listbox } from "@headlessui/react";
 
-const people = [
-  { id: 1, name: "Durward Reynolds" },
-  { id: 2, name: "Kenton Towne" },
-  { id: 3, name: "Therese Wunsch" },
-  { id: 4, name: "Benedict Kessler" },
-  { id: 5, name: "Katelyn Rohan" },
-];
+const User = ({ data, customers }) => {
+  const dispatch = useDispatch();
 
-const User = ({ data }) => {
-  const [selectedPerson, setSelectedPerson] = useState(people[0]);
+  const onChangeUser = (e) => {
+    dispatch(setCurrentCustomer(e.target.value));
+  };
 
   return (
     <section className="col-span-1 flex flex-col items-center">
@@ -19,12 +15,17 @@ const User = ({ data }) => {
         <p className="mb-[13px]">شخص</p>
         <select
           className="h-10 w-full rounded-lg border border-[#AEAEAE] bg-[#F1F1F1] text-[#333333] outline-none"
-          id="cars"
-          name="cars"
+          onChange={onChangeUser}
         >
-          <option className="text-sm text-[#333333]">
-            0002 - شرکت راه سازان - مهندس علی راهداری
-          </option>
+          {customers.map((customer) => (
+            <option
+              key={customer.customerID}
+              value={customer.customerID}
+              className="text-sm text-[#333333]"
+            >
+              {`${customer.customerPersonalInfo.personal.companyName} - ${customer.customerPersonalInfo.personal.major} ${customer.customerPersonalInfo.personal.name}`}
+            </option>
+          ))}
         </select>
       </div>
 
